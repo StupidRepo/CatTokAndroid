@@ -6,7 +6,7 @@ In the video mentioned, Bryce successfully modifies TikTok to only display video
 So I thought, why not make an Android version of this? And so, I made CatTokAndroid.
 
 ## How does it work?
-CatTokAndroid uses the Xposed Framework to hook into TikTok's code and modify it to only show videos that contain the word 'cat' in the description. This is done by hooking into the method that adapts videos from TikTok's servers to the FYP *(For You Page)* and simply cutting out the videos that don't contain the word 'cat' in their descriptions.
+CatTokAndroid uses the XPosed framework to hook into the `setData` method (in the `FullFeedPagerAdapter` class) that adapts videos from TikTok's servers to the FYP *(For You Page)* and simply cutting out the videos that don't contain the word 'cat' in their descriptions.
 
 ## How do I use it?
 To use it, you need to have a rooted Android device with the Xposed Framework installed. If you have Magisk installed, you should use [LSPosed][lsposed].
