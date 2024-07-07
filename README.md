@@ -1,6 +1,9 @@
 # CatTokAndroid
 CatTokAndroid was made from an idea I had after I watched a video on YouTube. This video was "[Modding TikTok to only show Cat Videos][video]", by [Bryce Bostwick][bryce].
-In the video mentioned, Bryce successfully modifies TikTok to only display videos that contain the word 'cat' in the description. This is good and everything, however he does this on **iOS**. So I thought, why not make an Android version of this? And so, I made CatTokAndroid.
+
+In the video mentioned, Bryce successfully modifies TikTok to only display videos that contain the word 'cat' in the description. This is awesome and cool but... he does this on **iOS**.
+
+So I thought, why not make an Android version of this? And so, I made CatTokAndroid.
 
 ## How does it work?
 CatTokAndroid uses the Xposed Framework to hook into TikTok's code and modify it to only show videos that contain the word 'cat' in the description. This is done by hooking into the method that adapts videos from TikTok's servers to the FYP *(For You Page)* and simply cutting out the videos that don't contain the word 'cat' in their descriptions.
