@@ -20,6 +20,10 @@ public class TikTokHooker implements XposedInterface.Hooker {
         List<Object> videoList = (List<Object>) callback.getArgs()[0];
         int size = videoList.size();
 
+//        AtomicInteger found = new AtomicInteger();
+
+        Log.d(TAG, Objects.requireNonNull(callback.getThisObject()).getClass().getName());
+
         try {
             Class<?> awemeClass = Helpers.getClass("com.ss.android.ugc.aweme.feed.model.Aweme", callback.getMember().getDeclaringClass().getClassLoader());
             Field descField = awemeClass.getDeclaredField("desc");
@@ -30,7 +34,10 @@ public class TikTokHooker implements XposedInterface.Hooker {
                     String videoDescription = ((String) Objects.requireNonNull(descField.get(video))).replaceAll("#", "");
                     List<String> keywords = Arrays.asList(videoDescription.split(" "));
 
-                    return !(keywords.contains("cat") || keywords.contains("catsoftiktok"));
+                    boolean flag = (keywords.contains("cat") || keywords.contains("catsoftiktok"));
+//                    if(flag) found.getAndIncrement();
+
+                    return !flag;
                 } catch (Exception e) {
                     Log.e(TAG, "before: ", e);
                     return true;
@@ -39,6 +46,10 @@ public class TikTokHooker implements XposedInterface.Hooker {
         } catch (Exception e) {
             Log.e(TAG, "before: ", e);
         }
+//
+//        if(found.get() == 0) {
+//            Log.v(TAG, "before: No cat videos were found. TikTok algorithm is too strong! >:P");
+//        }
 
         Log.v(TAG, "before: Video list had " + size + " videos, then got filtered down to " + videoList.size() + " videos!");
 
