@@ -1,0 +1,24 @@
+[versions]
+agp = "8.3.2"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+material = "1.10.0"
+reflections = "0.10.2"
+xposed-api = "100"
+xposed-helper = "100.0.1"
+
+[libraries]
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+libxposed-api = { group = "io.github.libxposed", name = "api", version.ref = "xposed-api" }
+libxposed-helper = { group = "io.github.libxposed", name = "helper", version.ref = "xposed-helper" }
+reflections = { module = "org.reflections:reflections", version.ref = "reflections" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+
