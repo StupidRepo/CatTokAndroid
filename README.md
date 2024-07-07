@@ -18,7 +18,12 @@ To use it, you need to have a rooted Android device with the Xposed Framework in
 > 
 > [LSPosed_mod][lsposed_mod] is secure and is trusted to be one of the better LSPosed forks than many others. It also works on the latest Android version(s), incl. the Android 15 betas.
 
-After you install [LSPosed][lsposed][(_mod)][lsposed_mod], you can download the CatTokAndroid APK from the [Releases][releases] page and install it (or build it from source). After that, you can enable the module in the LSPosed(_mod) app. After enabling the module, close TikTok completely (force quit it) and open it again. You should now only see videos cat videos, providing the algorithm recommends at least 1 cat video to you.
+### LSPosed
+1. Install [LSPosed][lsposed][(_mod)][lsposed_mod].
+2. After you've installed LSPosed, download the CatTokAndroid APK from the [Releases][releases] page and install it (or build it from source).
+3. Now, enable the module in the LSPosed app.
+4. Simply close TikTok completely (force quit it) and open it again.
+5. You should now only see videos cat videos, providing the algorithm recommends at least 1 cat video to you.
 
 [video]: https://www.youtube.com/watch?v=YW3jL2gI9IE
 [bryce]: https://www.youtube.com/@brycedotco
@@ -27,3 +32,13 @@ After you install [LSPosed][lsposed][(_mod)][lsposed_mod], you can download the 
 [lsposed_mod]: https://github.com/mywalkb/LSPosed_mod
 
 [releases]: https://github.com/StupidRepo/CatTokAndroid/releases
+
+## FAQ
+### I can't see any videos at all, the FYP is just black!
+This is because the algorithm doesn't recommend any cat videos to you. The algorithm is based on your interests and what you like.
+If it doesn't think you're interested in cat videos, it won't recommend any to you and therefore there will be no videos returned from TikTok servers with the word `cat` in the description.
+
+Simply try dragging down the screen to try and refresh. This should hopefully get you at least 1 cat video after a few attempts :)
+### It doesn't load cat videos when I reach the bottom, and I have to swipe multiple times to load one!
+This is because the amount of cat videos to other videos is not balanced and therefore, there could be a situation where the ratio of cat videos to other videos is **low**. This is not a bug, but a feature of the algorithm.
+
