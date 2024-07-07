@@ -9,8 +9,11 @@ CatTokAndroid uses the Xposed Framework to hook into TikTok's code and modify it
 To use it, you need to have a rooted Android device with the Xposed Framework installed. If you have Magisk installed, you should use [LSPosed][lsposed].
 
 > [!WARNING]
+> ***LSPosed has been discontinued/archived.***
 > 
-> LSPosed has been discontinued/archived. It is recommended to use an updated fork of LSPosed, such as [LSPosed_mod][lsposed_mod]. LSPosed_mod is secure and is trusted to be one of the better LSPosed forks than many others. It also works on the latest Android version(s), incl. the Android 15 betas.
+> It is recommended to use an updated fork of LSPosed, such as [LSPosed_mod][lsposed_mod].
+> 
+> [LSPosed_mod][lsposed_mod] is secure and is trusted to be one of the better LSPosed forks than many others. It also works on the latest Android version(s), incl. the Android 15 betas.
 
 After you install [LSPosed][lsposed][(_mod)][lsposed_mod], you can download the CatTokAndroid APK from the [Releases][releases] page and install it (or build it from source). After that, you can enable the module in the LSPosed(_mod) app. After enabling the module, close TikTok completely (force quit it) and open it again. You should now only see videos cat videos, providing the algorithm recommends at least 1 cat video to you.
 
