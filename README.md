@@ -1,5 +1,5 @@
 # CatTokAndroid
-CatTokAndroid was made from an idea I had after I watched a video on YouTube. This video was "[Modding TikTok to only show Cat Videos][video]", by [Bryce Bostwick][bryce].
+CatTokAndroid was made from an idea I had after I watched a video on YouTube. That video was "[Modding TikTok to only show Cat Videos][video]", by [Bryce Bostwick][bryce].
 
 In the video mentioned, Bryce successfully modifies TikTok to only display videos that contain the word 'cat' in the description. This is awesome and cool but... he does this on **iOS**.
 
